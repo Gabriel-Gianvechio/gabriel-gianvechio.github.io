@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da velha</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <audio id="backgroundMusic" src="./Kavinsky - Zenith feat. Prudence & Morgan Phalen.mp3" autoplay loop></audio>
+    <button id="playButton">Play Music</button>
+
+    <h1>Jogo da velha</h1>
+
+    <div class="textbox">
+        <p class="end-message"></p>
+        <button class="reset-box">resetar</button>
+    </div>
+    
+    <div class="area">
+        <div data-item="a1" class="item b r"></div>
+        <div data-item="a2" class="item b r"></div>
+        <div data-item="a3" class="item b"></div>
+
+        <div data-item="b1" class="item b r"></div>
+        <div data-item="b2" class="item b r"></div>
+        <div data-item="b3" class="item b"></div>
+
+        <div data-item="c1" class="item r"></div>
+        <div data-item="c2" class="item r"></div>
+        <div data-item="c3" class="item"></div>
+    </div>
+
+    <div class="info">
+        <div class="infoItem">
+            <div class="infoTitle">A vez é:</div>
+            <div class="infoBody turn">--</div>
+        </div>
+        <div class="infoItem">
+            <div class="infoTitle">Vencedor:</div>
+            <div class="infoBody result">--</div>
+        </div>
+    </div>
+
+    <button class="reset">Resetar</button>
+
+    <script src="script.js"></script>
+</body>
+
+<footer>
+    desenvolvido para estudo </br> por <a href="https://www.linkedin.com/in/gabriel-gianvechio-64a719177/">Deviel</a>
+</footer>
+</html>
